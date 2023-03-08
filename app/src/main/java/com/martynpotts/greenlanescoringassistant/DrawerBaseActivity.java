@@ -45,7 +45,7 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
 
         switch (item.getItemId()){
             case R.id.Home:
-                startActivity(new Intent(this, ArcherDetails.class));
+                startActivity(new Intent(this, HomeActivity.class));
                 overridePendingTransition(0,0);
                 break;
             case R.id.ArcherDetails:
