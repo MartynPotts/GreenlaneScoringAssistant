@@ -4,7 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ArcherDetails"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".ArcherDetails">
+
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="100dp"
+        android:layout_height="61dp"
+        android:text="Edit"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="619dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Save"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="619dp" />
+
+    <TextView
+        android:id="@+id/lblArcherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Archer Name"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <EditText
+        android:id="@+id/edtArcherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblArcherName"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:text="Age"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblAge"
+        tools:layout_editor_absoluteX="161dp" />
+
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <Spinner
+        android:id="@+id/spnGender"
+        android:layout_width="206dp"
+        android:layout_height="39dp"
+        android:entries="@array/Gender"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <ScrollView
+        android:layout_width="317dp"
+        android:layout_height="203dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="354dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CheckBox" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CheckBox" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtClassifications"
+        android:layout_width="110dp"
+        android:layout_height="22dp"
+        android:text="Classifications"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="332dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
