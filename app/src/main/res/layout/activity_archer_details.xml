@@ -2,133 +2,301 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSaveArcher"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ArcherDetails">
+    android:paddingStart="2dp"
+    tools:context=".ArcherDetails"
+    tools:ignore="RtlSymmetry">
 
-
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        android:text="Edit"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="619dp" />
-
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:text="Save"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="619dp" />
 
     <TextView
         android:id="@+id/lblArcherName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Archer Name"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="109dp" />
-
-    <EditText
-        android:id="@+id/edtArcherName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/lblArcherName"
-        tools:layout_editor_absoluteX="160dp" />
-
-    <TextView
-        android:id="@+id/lblAge"
-        android:layout_width="75dp"
-        android:layout_height="26dp"
-        android:text="Age"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-    <EditText
-        android:id="@+id/edtAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Age"
-        android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/lblAge"
-        tools:layout_editor_absoluteX="161dp" />
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/archer_name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtArcherName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/lblGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gender"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="227dp" />
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/gender"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtArcherName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAge"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtArcherName"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:hint="@string/archer_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblArcherName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/age"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtArcherName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblArcherName"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblArcherName"
+        app:layout_constraintTop_toBottomOf="@+id/edtArcherName"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Spinner
         android:id="@+id/spnGender"
-        android:layout_width="206dp"
-        android:layout_height="39dp"
+        android:layout_width="210dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
         android:entries="@array/Gender"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="210dp" />
-
-    <ScrollView
-        android:layout_width="317dp"
-        android:layout_height="203dp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="354dp">
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <CheckBox
-                    android:id="@+id/checkBox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CheckBox" />
-
-                <CheckBox
-                    android:id="@+id/checkBox2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CheckBox" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </TableLayout>
-    </ScrollView>
+        android:popupBackground="@drawable/side_nav_bar"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/lblGender"
+        app:layout_constraintTop_toBottomOf="@+id/edtAge" />
 
     <TextView
-        android:id="@+id/txtClassifications"
-        android:layout_width="110dp"
-        android:layout_height="22dp"
-        android:text="Classifications"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="332dp" />
+        android:id="@+id/lblClassification"
+        android:layout_width="122dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/classification"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblGender"
+        tools:ignore="TextSizeCheck" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="144dp"
+        android:contentDescription="@string/classification"
+        android:fillViewport="false"
+        android:paddingStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblClassification">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblArcher"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/archer"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/chkArcherFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_1st"
+                    android:textColor="#000000"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <CheckBox
+                    android:id="@+id/chkArcherSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_2nd"
+                    android:textColor="#000000"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <CheckBox
+                    android:id="@+id/chkArcherThird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_3rd"
+                    android:textColor="#000000"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBowman"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bowman"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/chkBowmanFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_2nd"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chkBowmanSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_3rd"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chkBowmanThird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/_3rd"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblMasterBowman"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/master_bowman"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/chkMasterBowman"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/master_bowman"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chkGrandMasterBowman"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/grand_master_bowman"
+                    android:textColor="#000000"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/chkEliteMasterBowman"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/elite_master_bowman"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnEditArcher"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,12 +16,15 @@
 
         <activity
             android:name=".BowDetails"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ArcherDetails"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".DrawerBaseActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

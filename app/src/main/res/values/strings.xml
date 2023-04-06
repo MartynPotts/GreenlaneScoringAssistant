@@ -23,4 +23,18 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="archer_name">Archer Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="classification">Classifications</string>
+    <string name="archer">Archer</string>
+    <string name="_1st">1st</string>
+    <string name="_2nd">2nd</string>
+    <string name="_3rd">3rd</string>
+    <string name="bowman">Bowman</string>
+    <string name="master_bowman">Master Bowman</string>
+    <string name="grand_master_bowman">Grand Master Bowman</string>
+    <string name="elite_master_bowman">Elite Master Bowman</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
 </resources>
