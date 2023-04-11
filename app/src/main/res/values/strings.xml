@@ -37,4 +37,23 @@
     <string name="elite_master_bowman">Elite Master Bowman</string>
     <string name="edit">Edit</string>
     <string name="save">Save</string>
+    <string name="bow_type">Bow Type</string>
+    <string name="recurve">Recurve</string>
+    <string name="poundage">Poundage</string>
+    <string name="bracing_height">Bracing Height</string>
+    <string name="sight_marks">Sight Marks</string>
+    <string name="imperial">Imperial</string>
+    <string name="_20_yards">20 Yards</string>
+    <string name="sight_mark">Sight Mark</string>
+    <string name="_30_yards">30 Yards</string>
+    <string name="_40_yards">40 Yards</string>
+    <string name="_50_yards">50 Yards</string>
+    <string name="_60_yards">60 Yards</string>
+    <string name="_80_yards">80 Yards</string>
+    <string name="_100_yards">100 Yards</string>
+    <string name="metric">Metric</string>
+    <string name="_30_metres">30 Metres</string>
+    <string name="_50_metre">50 Metre</string>
+    <string name="_70_metre">70 Metre</string>
+    <string name="_90_metre">90 Metre</string>
 </resources>
