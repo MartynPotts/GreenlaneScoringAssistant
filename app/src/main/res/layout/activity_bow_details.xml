@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/lblBowType"
-        android:layout_width="0dp"
+        android:layout_width="122dp"
         android:layout_height="27dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="60dp"
@@ -27,7 +27,7 @@
 
     <EditText
         android:id="@+id/edtBowType"
-        android:layout_width="210dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="33dp"
@@ -47,7 +47,7 @@
 
     <TextView
         android:id="@+id/lblPoundage"
-        android:layout_width="0dp"
+        android:layout_width="122dp"
         android:layout_height="27dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="50dp"
@@ -55,15 +55,14 @@
         android:text="@string/poundage"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edtBowType"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@id/edtPoundage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblBowType"
         tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/edtPoundage"
-        android:layout_width="210dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="33dp"
@@ -78,13 +77,13 @@
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/lblBowType"
-        app:layout_constraintTop_toBottomOf="@+id/edtBowType"
+        app:layout_constraintStart_toEndOf="@id/lblPoundage"
+        app:layout_constraintTop_toBottomOf="@id/edtBowType"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/lblBracingHeight"
-        android:layout_width="0dp"
+        android:layout_width="122dp"
         android:layout_height="27dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="50dp"
@@ -92,15 +91,14 @@
         android:text="@string/bracing_height"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edtBowType"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@id/edtBracingHeight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPoundage"
         tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/edtBracingHeight"
-        android:layout_width="210dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="33dp"
@@ -108,14 +106,14 @@
         android:ems="10"
         android:hint="@string/bracing_height"
         android:importantForAutofill="no"
-        android:inputType="none|number"
+        android:inputType="none|number|numberDecimal"
         android:minHeight="48dp"
         android:paddingStart="5dp"
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/lblPoundage"
+        app:layout_constraintStart_toEndOf="@id/lblBracingHeight"
         app:layout_constraintTop_toBottomOf="@+id/edtPoundage"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
@@ -187,6 +185,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000"
                     tools:ignore="DuplicateSpeakableTextCheck" />
@@ -219,6 +218,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -249,6 +249,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -279,6 +280,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -308,6 +310,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -338,6 +341,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -367,6 +371,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -405,6 +410,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -434,6 +440,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -464,6 +471,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>
@@ -493,6 +501,7 @@
                     android:hint="@string/sight_mark"
                     android:importantForAutofill="no"
                     android:inputType="numberDecimal"
+                    android:paddingStart="5dp"
                     android:textColor="#000000"
                     android:textColorHint="#000000" />
             </LinearLayout>

@@ -16,7 +16,7 @@
         android:layout_width="0dp"
         android:layout_height="27dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="13dp"
         android:text="@string/archer_name"
         android:textColor="#000000"
@@ -26,27 +26,11 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
 
-    <TextView
-        android:id="@+id/lblGender"
-        android:layout_width="0dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="13dp"
-        android:text="@string/gender"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edtArcherName"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblAge"
-        tools:ignore="TextSizeCheck" />
-
     <EditText
         android:id="@+id/edtArcherName"
-        android:layout_width="210dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="33dp"
         android:background="@drawable/et_style"
         android:ems="10"
@@ -67,12 +51,12 @@
         android:layout_width="0dp"
         android:layout_height="27dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="13dp"
         android:text="@string/age"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/edtArcherName"
+        app:layout_constraintEnd_toStartOf="@id/edtAge"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblArcherName"
@@ -80,9 +64,9 @@
 
     <EditText
         android:id="@+id/edtAge"
-        android:layout_width="210dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="33dp"
         android:background="@drawable/et_style"
         android:ems="10"
@@ -95,30 +79,52 @@
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/lblArcherName"
+        app:layout_constraintStart_toEndOf="@id/lblAge"
         app:layout_constraintTop_toBottomOf="@+id/edtArcherName"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <Spinner
-        android:id="@+id/spnGender"
-        android:layout_width="210dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/gender"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/edtGender"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAge"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtGender"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
         android:background="@drawable/et_style"
-        android:entries="@array/Gender"
-        android:popupBackground="@drawable/side_nav_bar"
-        android:spinnerMode="dropdown"
+        android:ems="10"
+        android:hint="@string/gender"
+        android:importantForAutofill="no"
+        android:inputType="text|textCapWords"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
-        app:layout_constraintStart_toEndOf="@+id/lblGender"
-        app:layout_constraintTop_toBottomOf="@+id/edtAge" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/lblGender"
+        app:layout_constraintTop_toBottomOf="@id/edtAge"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/lblClassification"
         android:layout_width="122dp"
         android:layout_height="27dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:text="@string/classification"
         android:textColor="#000000"
@@ -134,9 +140,9 @@
         android:layout_width="350dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="50dp"
         android:contentDescription="@string/classification"
         android:fillViewport="false"
         android:paddingStart="5dp"
@@ -213,7 +219,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/_2nd"
+                    android:text="@string/_1st"
                     android:textColor="#000000" />
 
                 <CheckBox
@@ -221,7 +227,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/_3rd"
+                    android:text="@string/_2nd"
                     android:textColor="#000000" />
 
                 <CheckBox
@@ -275,28 +281,6 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/btnEditArcher"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="52dp"
-        android:text="@string/edit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="52dp"
-        android:text="@string/save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
