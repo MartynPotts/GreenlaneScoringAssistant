@@ -46,7 +46,6 @@ public class BowDetails extends DrawerBaseActivity {
         SharedPreferences.Editor myEdit = sp.edit();
 
         myEdit.putString("BowType", bowType.getText().toString() );
-        try {
             myEdit.putInt("Poundage", Integer.parseInt(poundage.getText().toString()));
 
             myEdit.putFloat("BracingHeight", Float.parseFloat(bracingHeight.getText().toString()));
@@ -64,13 +63,6 @@ public class BowDetails extends DrawerBaseActivity {
             myEdit.putFloat("SightMarks70mtrs", Float.parseFloat(sightMark70mtrs.getText().toString()));
             myEdit.putFloat("SightMarks90mtrs", Float.parseFloat(sightMark90mtrs.getText().toString()));
 
-        } catch (NumberFormatException nfe){
-            myEdit.putInt("Poundage", 0);
-
-            myEdit.putFloat("BracingHeight",0F);
-
-            myEdit.putFloat("SightMarks20yrds",0F);
-        }
 
 
         myEdit.apply();

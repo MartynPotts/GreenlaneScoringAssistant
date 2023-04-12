@@ -3,6 +3,8 @@
     <color name="Primary">#54090B</color>
     <color name="PrimaryDark">#54090B</color>
     <color name="Accent">#1986A8</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="AccentLight">#1B91B5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#555555</color>
 </resources>

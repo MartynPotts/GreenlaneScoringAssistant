@@ -26,6 +26,12 @@
             android:name=".DrawerBaseActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
+        <activity android:name=".SelectRound"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity android:name=".ScoreRound"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
         <activity
             android:name=".HomeActivity"
             android:exported="true"

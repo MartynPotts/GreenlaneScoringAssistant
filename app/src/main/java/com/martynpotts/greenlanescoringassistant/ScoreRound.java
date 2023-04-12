@@ -4,11 +4,17 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ScoreRound extends AppCompatActivity {
+import com.martynpotts.greenlanescoringassistant.databinding.ActivityScoreRoundBinding;
+import com.martynpotts.greenlanescoringassistant.databinding.ActivitySelectRoundBinding;
 
+public class ScoreRound extends DrawerBaseActivity {
+
+    ActivityScoreRoundBinding activityScoreRoundBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_score_round);
+        activityScoreRoundBinding = ActivityScoreRoundBinding.inflate(getLayoutInflater());
+        setContentView(activityScoreRoundBinding.getRoot());
+        allocateActivityTitle("Select Round");
     }
 }

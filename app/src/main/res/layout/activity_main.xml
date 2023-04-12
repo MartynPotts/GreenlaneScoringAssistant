@@ -8,5 +8,27 @@
     android:background="@color/white">
 
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSelectRound"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:foreground="@drawable/archery_target"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recPreviousRounds"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/archery_target" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recPreviousRounds"
+        android:layout_width="402dp"
+        android:layout_height="548dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
