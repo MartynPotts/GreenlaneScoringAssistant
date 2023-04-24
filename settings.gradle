@@ -12,5 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Greenlane Scoring Assistant"
 include ':app'
+rootProject.name = "Greenlane Scoring Assistant"
+

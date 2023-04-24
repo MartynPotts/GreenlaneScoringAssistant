@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -17,7 +18,7 @@ import android.widget.FrameLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class DrawerBaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public abstract class DrawerBaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
 
@@ -39,6 +40,7 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
         toggle.syncState();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -69,4 +71,5 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
             getSupportActionBar().setTitle(titleString);
         }
     }
+
 }

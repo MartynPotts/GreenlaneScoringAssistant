@@ -10,7 +10,6 @@
     tools:context=".ArcherDetails"
     tools:ignore="RtlSymmetry">
 
-
     <TextView
         android:id="@+id/lblArcherName"
         android:layout_width="0dp"

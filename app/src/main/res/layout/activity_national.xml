@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ScoreRoundToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreRoundToolbar">
+
+        <TextView
+            android:id="@+id/distance1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Distance 1"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end1Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end2Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end3Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end4Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end5Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end6"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end6Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end7"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end7Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end8"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end8Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distance2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Distance 2"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end9"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end9Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end10"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end10Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end11"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end11Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/end12"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:letterSpacing="0.2"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/end12Total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Totals"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/totalHitsLbl"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_style"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text="@string/hits"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalGoldsLbl"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_style"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text="@string/golds"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalScoreLbl"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_style"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text="@string/score"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:id="@+id/totalHits"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalGolds"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_style"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/totalScore"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_style"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#fff535"
+                android:text="9"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#fd1b14"
+                android:text="7"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#41b7c8"
+                android:text="5"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#000000"
+                android:text="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#ffffff"
+                android:text="1"
+                android:textColor="#000000"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnMiss"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#16A30D"
+                android:text="M"
+                android:textColor="#000000" />
+
+            <ImageButton
+                android:id="@+id/ibtnBackspace"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/Accent"
+                android:contentDescription="@string/backspace"
+                app:srcCompat="@drawable/backspace" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

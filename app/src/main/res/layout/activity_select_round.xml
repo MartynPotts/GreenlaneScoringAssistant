@@ -32,6 +32,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
+        android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/spnSelectRound"
         app:layout_constraintEnd_toEndOf="parent"

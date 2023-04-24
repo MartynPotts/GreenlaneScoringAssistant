@@ -57,4 +57,27 @@
     <string name="_70_metre">70 Metres</string>
     <string name="_90_metre">90 Metres</string>
     <string name="round_title">Round Title</string>
+    <string name="distance_20_yards">Distance: 20 Yards</string>
+    <string name="distance_2_80_yards">Distance 2: 80 Yards</string>
+    <string name="distance_1_80_yards">Distance 1: 80 Yards</string>
+    <string name="distance_2_20_yards">Distance 2: 20 Yards</string>
+    <string name="distance_1_30_yards">Distance 1: 30 Yards</string>
+    <string name="distance_2_30_yards">Distance 2: 30 Yards</string>
+    <string name="distance_1_40_yards">Distance 1: 40 Yards</string>
+    <string name="distance_2_40_yards">Distance 2: 40 Yards</string>
+    <string name="distance_1_50_yards">Distance 1: 50 Yards</string>
+    <string name="distance_2_50_yards">Distance 2: 50 Yards</string>
+    <string name="distance_1_60_yards">Distance 1: 60 Yards</string>
+    <string name="distance_2_60_yards">Distance 2: 60 Yards</string>
+    <string name="backspace">Backspace</string>
+    <string name="distance_1_100_yards">Distance 1: 100 Yards</string>
+    <string name="distance_100_yards">Distance: 100 Yards</string>
+    <string name="distance_80_yards">Distance: 80 Yards</string>
+    <string name="distance_60_yards">Distance: 60 Yards</string>
+    <string name="distance_50_yards">Distance: 50 Yards</string>
+    <string name="distance_40_yards">Distance: 40 Yards</string>
+    <string name="distance_30_yards">Distance: 30 Yards</string>
+    <string name="hits">Hits:</string>
+    <string name="golds">Golds:</string>
+    <string name="score">Score:</string>
 </resources>
