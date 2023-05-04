@@ -7,18 +7,21 @@
     android:background="@color/white"
     tools:context=".SelectRound">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnStartRound"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginBottom="44dp"
-        android:clickable="true"
-        android:foreground="@drawable/archery_target"
+    <ImageButton
+        android:id="@+id/ibtnScoreRound"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/select_round"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/archery_target"
-        tools:ignore="ContentDescription,KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
+        tools:srcCompat="@drawable/archery_target" />
 
     <EditText
         android:id="@+id/edtRoundTitle"

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,6 +77,7 @@ public class SelectRound extends DrawerBaseActivity{
                         selectRoundVariantAdapter.addAll(variants252);
                         break;
                 }
+                selectRoundVariantAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -109,7 +111,7 @@ public class SelectRound extends DrawerBaseActivity{
         setBowType.setText(bowTypeString);
 
 
-        FloatingActionButton launchScoreRound = findViewById(R.id.btnStartRound);
+        ImageButton launchScoreRound = findViewById(R.id.ibtnScoreRound);
         launchScoreRound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

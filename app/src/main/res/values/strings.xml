@@ -80,4 +80,5 @@
     <string name="hits">Hits:</string>
     <string name="golds">Golds:</string>
     <string name="score">Score:</string>
+    <string name="select_round">Select Round</string>
 </resources>

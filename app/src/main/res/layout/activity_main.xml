@@ -8,28 +8,31 @@
     android:background="@color/white">
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnSelectRound"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginBottom="28dp"
-        android:clickable="true"
-        android:foreground="@drawable/archery_target"
+    <ImageButton
+        android:id="@+id/ibtnSelectRound"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="@string/select_round"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recPreviousRounds"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/archery_target" />
+        app:srcCompat="@drawable/archery_target"
+        tools:srcCompat="@drawable/archery_target" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recPreviousRounds"
-        android:layout_width="0dp"
-        android:layout_height="548dp"
+        android:layout_width="313dp"
+        android:layout_height="523dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ibtnSelectRound"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

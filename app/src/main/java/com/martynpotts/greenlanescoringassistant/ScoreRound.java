@@ -1,10 +1,9 @@
 package com.martynpotts.greenlanescoringassistant;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -34,7 +33,7 @@ public class ScoreRound extends DrawerBaseActivity {
         String chosenRound = getChosenRound.getStringExtra("ChosenRound");
         String chosenRoundVariant = getChosenRound.getStringExtra("ChosenRoundVariant");
 
-        TextView distance1, distance2;
+        TextView distance1, distance2, distance252;
         Button btn10, btn9, btn8, btn7, btn6, btn5, btn4, btn3, btn2, btn1, btnMiss;
         ImageButton ibtnBackspace;
         Button[] buttons;
@@ -64,12 +63,12 @@ public class ScoreRound extends DrawerBaseActivity {
                 getSupportActionBar().setTitle(roundName);
                 MAX_NUMBER_ENDS = 10;
                 buttons = new Button[]{findViewById(R.id.btn10), findViewById(R.id.btn9), findViewById(R.id.btn8), findViewById(R.id.btn7), findViewById(R.id.btn6), findViewById(R.id.btn5), findViewById(R.id.btn4), findViewById(R.id.btn3), findViewById(R.id.btn2), findViewById(R.id.btn1), findViewById(R.id.btnMiss)};
-                int[] textViewEndsids = {R.id.end1, R.id.end2, R.id.end3, R.id.end4, R.id.end5, R.id.end6, R.id.end7, R.id.end8, R.id.end9, R.id.end10, R.id.end11, R.id.end12};
+                int[] textViewEndsids = {R.id.end1, R.id.end2, R.id.end3, R.id.end4, R.id.end5, R.id.end6, R.id.end7, R.id.end8, R.id.end9, R.id.end10};
                 for (int i = 0; i < textViewEndsids.length; i++) {
                     textViewMap.put("end" + (i + 1), findViewById(textViewEndsids[i]));
                 }
 
-                int[] textViewEndTotalIds = {R.id.end1Total, R.id.end2Total, R.id.end3Total, R.id.end4Total, R.id.end5Total, R.id.end6Total, R.id.end7Total, R.id.end8Total, R.id.end9Total, R.id.end10Total, R.id.end11Total, R.id.end12Total};
+                int[] textViewEndTotalIds = {R.id.end1Total, R.id.end2Total, R.id.end3Total, R.id.end4Total, R.id.end5Total, R.id.end6Total, R.id.end7Total, R.id.end8Total, R.id.end9Total, R.id.end10Total};
 
                 for (int i = 0; i < textViewEndTotalIds.length; i++) {
                     textViewMap.put("endTotal" + (i + 1), findViewById(textViewEndTotalIds[i]));
@@ -380,7 +379,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         List<Integer> currentList = ends.get(name);
 
                         if (currentList.size() >= MAX_SIZE) {
-                            index[0] = (index[0] + 1) % 12;
+                            index[0] = (index[0] + 1) % 10;
                             name = "end" + (index[0] + 1);
                             currentList = new ArrayList<>();
                             ends.put(name, currentList);
@@ -389,7 +388,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         currentList.add(7);
                         updateListTextView(name, ends, textViewMap, index);
 
-                        if (name.equals("end12") && currentList.size() == 6) {
+                        if (name.equals("end10") && currentList.size() == 6) {
                             for (int i = 0; i < buttons.length; i++) {
                                 buttons[i].setEnabled(false);
                             }
@@ -577,7 +576,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         List<Integer> currentList = ends.get(name);
 
                         if (currentList.size() >= MAX_SIZE) {
-                            index[0] = (index[0] + 1) % 12;
+                            index[0] = (index[0] + 1) % 10;
                             name = "end" + (index[0] + 1);
                             currentList = new ArrayList<>();
                             ends.put(name, currentList);
@@ -586,7 +585,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         currentList.add(5);
                         updateListTextView(name, ends, textViewMap, index);
 
-                        if (name.equals("end12") && currentList.size() == 6) {
+                        if (name.equals("end10") && currentList.size() == 6) {
                             for (int i = 0; i < buttons.length; i++) {
                                 buttons[i].setEnabled(false);
                             }
@@ -774,7 +773,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         List<Integer> currentList = ends.get(name);
 
                         if (currentList.size() >= MAX_SIZE) {
-                            index[0] = (index[0] + 1) % 12;
+                            index[0] = (index[0] + 1) % 10;
                             name = "end" + (index[0] + 1);
                             currentList = new ArrayList<>();
                             ends.put(name, currentList);
@@ -783,7 +782,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         currentList.add(3);
                         updateListTextView(name, ends, textViewMap, index);
 
-                        if (name.equals("end12") && currentList.size() == 6) {
+                        if (name.equals("end10") && currentList.size() == 6) {
                             for (int i = 0; i < buttons.length; i++) {
                                 buttons[i].setEnabled(false);
                             }
@@ -971,7 +970,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         List<Integer> currentList = ends.get(name);
 
                         if (currentList.size() >= MAX_SIZE) {
-                            index[0] = (index[0] + 1) % 12;
+                            index[0] = (index[0] + 1) % 10;
                             name = "end" + (index[0] + 1);
                             currentList = new ArrayList<>();
                             ends.put(name, currentList);
@@ -980,7 +979,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         currentList.add(1);
                         updateListTextView(name, ends, textViewMap, index);
 
-                        if (name.equals("end12") && currentList.size() == 6) {
+                        if (name.equals("end10") && currentList.size() == 6) {
                             for (int i = 0; i < buttons.length; i++) {
                                 buttons[i].setEnabled(false);
                             }
@@ -1069,7 +1068,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         List<Integer> currentList = ends.get(name);
 
                         if (currentList.size() >= MAX_SIZE) {
-                            index[0] = (index[0] + 1) % 12;
+                            index[0] = (index[0] + 1) % 10;
                             name = "end" + (index[0] + 1);
                             currentList = new ArrayList<>();
                             ends.put(name, currentList);
@@ -1078,7 +1077,7 @@ public class ScoreRound extends DrawerBaseActivity {
                         currentList.add(0);
                         updateListTextView(name, ends, textViewMap, index);
 
-                        if (name.equals("end12") && currentList.size() == 6) {
+                        if (name.equals("end10") && currentList.size() == 6) {
                             for (int i = 0; i < buttons.length; i++) {
                                 buttons[i].setEnabled(false);
                             }
@@ -1270,6 +1269,7 @@ public class ScoreRound extends DrawerBaseActivity {
                 getSupportActionBar().setTitle(roundName);
                 distance1 = findViewById(R.id.distance1);
                 distance2 = findViewById(R.id.distance2);
+
                 textViewEndsids = new int[]{R.id.end1, R.id.end2, R.id.end3, R.id.end4, R.id.end5, R.id.end6, R.id.end7, R.id.end8, R.id.end9, R.id.end10, R.id.end11, R.id.end12};
                 buttons = new Button[]{findViewById(R.id.btn9), findViewById(R.id.btn7), findViewById(R.id.btn5), findViewById(R.id.btn3), findViewById(R.id.btn1), findViewById(R.id.btnMiss)};
                 for (int i = 0; i < textViewEndsids.length; i++) {
@@ -2009,8 +2009,9 @@ public class ScoreRound extends DrawerBaseActivity {
                 toolbar.setTitleTextColor(Color.WHITE);
                 setSupportActionBar(toolbar);
                 getSupportActionBar().setTitle(roundName);
-                MAX_NUMBER_ENDS = 6;
-                distance1 = findViewById(R.id.distance1);
+                distance252 = findViewById(R.id.distance252);
+                Log.d("ChosenRoundVariant", chosenRoundVariant);
+
                 textViewEndsids = new int[]{R.id.end1, R.id.end2, R.id.end3, R.id.end4, R.id.end5, R.id.end6, R.id.end7, R.id.end8, R.id.end9, R.id.end10, R.id.end11, R.id.end12};
                 buttons = new Button[]{findViewById(R.id.btn9), findViewById(R.id.btn7), findViewById(R.id.btn5), findViewById(R.id.btn3), findViewById(R.id.btn1), findViewById(R.id.btnMiss)};
                 for (int i = 0; i < textViewEndsids.length; i++) {
@@ -2023,8 +2024,8 @@ public class ScoreRound extends DrawerBaseActivity {
                     textViewMap.put("endTotal" + (i + 1), findViewById(textViewEndTotalIds[i]));
                 }
 
+                MAX_NUMBER_ENDS = 6;
                 btn9 = findViewById(R.id.btn9);
-
                 btn9.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -2718,27 +2719,29 @@ public class ScoreRound extends DrawerBaseActivity {
                 });
 
                 switch (chosenRoundVariant) {
-                    case "100 Yards":
-                        distance1.setText(R.string.distance_100_yards);
+                    case "252 100 Yards":
+                        distance252.setText("Distance: 100 Yards");
                         break;
-                    case "80 Yards":
-                        distance1.setText(R.string.distance_80_yards);
+                    case "252 80 Yards":
+                        distance252.setText("Distance: 80 Yards");
                         break;
-                    case "60 Yards":
-                        distance1.setText(R.string.distance_60_yards);
+                    case "252 60 Yards":
+                        distance252.setText("Distance: 60 Yards");
                         break;
-                    case "50 Yards":
-                        distance1.setText(R.string.distance_50_yards);
+                    case "252 50 Yards":
+                        distance252.setText("Distance: 50 Yards");
                         break;
-                    case "40 yards":
-                        distance1.setText(R.string.distance_40_yards);
+                    case "252 40 yards":
+                        distance252.setText("Distance: 40 Yards");
                         break;
-                    case "30 Yards":
-                        distance1.setText(R.string.distance_30_yards);
+                    case "252 30 Yards":
+                        distance252.setText("Distance: 30 Yards");
                         break;
-                    case "20 Yards":
-                        distance1.setText(R.string.distance_20_yards);
+                    case "252 20 Yards":
+                        distance252.setText("Distance: 20 Yards");
                         break;
+                    default:
+                        distance252.setText(chosenRoundVariant);
                 }
                 break;
             default:

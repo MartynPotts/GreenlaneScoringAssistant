@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -48,7 +49,7 @@ public class HomeActivity extends DrawerBaseActivity {
         }
 
 
-        FloatingActionButton launchSelectRound = (FloatingActionButton) findViewById(R.id.btnSelectRound);
+        ImageButton launchSelectRound = (ImageButton) findViewById(R.id.ibtnSelectRound);
         launchSelectRound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
